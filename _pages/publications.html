@@ -7,19 +7,19 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign pubs = site.publications | sort: "order" | sort: "date" | reverse %}
+{% assign pubs = site.publications | sort: "date" | sort: "order" | reverse %}
 {% assign current_year = "" %}
 
 {% for post in pubs %}
 
-  {% assign year = post.date | date: "%Y" %}
+{% assign year = post.date | date: "%Y" %}
 
-  {% if year != current_year %}
-    <h2>{{ year }}</h2>
-    <hr>
-    {% assign current_year = year %}
-  {% endif %}
+{% if year != current_year %}
+{{ year }}
 
-  {% include archive-single.html %}
+{% assign current_year = year %}
+{% endif %}
+
+{% include archive-single.html %}
 
 {% endfor %}
