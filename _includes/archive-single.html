@@ -30,32 +30,24 @@
     <!-- ===== Publication Style ===== -->
     {% if post.collection == 'publications' %}
 
-      <p>
-        <strong>{{ post.venue }} '{{ post.date | date: "%y" }}</strong> |
-        <strong>{{ post.title }}</strong>
-      </p>
-
-      {% if post.authors %}
-        <p>{{ post.authors | markdownify }}</p>
+      <div class="pub-entry">
+      
+      <strong>{{ post.venue }} '{{ post.date | date: "%y" }}</strong> |
+      <strong>{{ post.title }}</strong><br>
+      
+      {{ post.authors | markdownify }}
+      
+      {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">PDF</a>
       {% endif %}
-
-      <p>
-        {% if post.paperurl %}
-          <a href="{{ post.paperurl }}">PDF</a>
-        {% endif %}
-
-        {% if post.code %}
-          | <a href="{{ post.code }}">Code</a>
-        {% endif %}
-
-        {% if post.arxiv %}
-          | <a href="{{ post.arxiv }}">arXiv</a>
-        {% endif %}
-
-        {% if post.slidesurl %}
-          | <a href="{{ post.slidesurl }}">Slides</a>
-        {% endif %}
-      </p>
+      {% if post.code %}
+       | <a href="{{ post.code }}">Code</a>
+      {% endif %}
+      {% if post.arxiv %}
+       | <a href="{{ post.arxiv }}">arXiv</a>
+      {% endif %}
+      
+      </div>
 
     <!-- ===== Teaching Style ===== -->
     {% elsif post.collection == 'teaching' %}
