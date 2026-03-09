@@ -15,6 +15,10 @@ Hi! 我是吴岱卿，现为中国科学院信息工程研究所2021级直博生
 
 **多模态内容理解**：探索多模态大模型在内容理解任务中的应用，包括音频、GUI智能体以及场景文字等相关任务。
 
+## 访问统计
+
+<br>
+
 <div style="width:300px; margin:0 auto; text-align:center;">
 <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=gQkB4N9SAF0777F-4pFcdDIm9K-HulGBqKBnD7ayejI"></script>
 </div>
