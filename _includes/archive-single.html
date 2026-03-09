@@ -36,7 +36,7 @@
       </p>
 
       {% if post.authors %}
-        <p>{{ post.authors }}</p>
+        <p>{{ post.authors | markdownify }}</p>
       {% endif %}
 
       <p>
