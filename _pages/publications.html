@@ -27,7 +27,15 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% assign pubs = site.publications | sort: "date" | reverse %}
+  {% assign current_year = "" %}
+  {% for post in pubs %}
+    {% assign year = post.date | date: "%Y" %}
+    {% if year != current_year %}
+      <h2>{{ year }}</h2>
+      <hr>
+      {% assign current_year = year %}
+    {% endif %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
