@@ -30,23 +30,35 @@
     <!-- ===== Publication Style ===== -->
     {% if post.collection == 'publications' %}
 
-      <div class="pub-entry">
-      
-      <strong>{{ post.venue }} '{{ post.date | date: "%y" }}</strong> |
-      <strong>{{ post.title }}</strong><br>
-      
-      {{ post.authors | markdownify }}
-      
-      {% if post.paperurl %}
-      <a href="{{ post.paperurl }}">PDF</a>
-      {% endif %}
-      {% if post.code %}
-       | <a href="{{ post.code }}">Code</a>
-      {% endif %}
-      {% if post.arxiv %}
-       | <a href="{{ post.arxiv }}">arXiv</a>
-      {% endif %}
-      
+      {% assign authors_highlight = post.authors | replace: "D. Wu", "<strong>D. Wu</strong>" %}
+
+      <div style="margin-bottom:10px; line-height:1.35;">
+
+        <span>
+          <strong>{{ post.venue }} '{{ post.date | date: "%y" }}</strong> |
+          <strong>{{ post.title }}</strong>
+        </span>
+        <br>
+
+        <span>
+          {{ authors_highlight }}
+        </span>
+        <br>
+
+        <span>
+          {% if post.paperurl %}
+          <a href="{{ post.paperurl }}">PDF</a>
+          {% endif %}
+
+          {% if post.code %}
+           | <a href="{{ post.code }}">Code</a>
+          {% endif %}
+
+          {% if post.arxiv %}
+           | <a href="{{ post.arxiv }}">arXiv</a>
+          {% endif %}
+        </span>
+
       </div>
 
     <!-- ===== Teaching Style ===== -->
