@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-{% assign pubs = site.publications | sort: "date" | reverse %}
+{% assign pubs = site.publications | sort: "order" | sort: "date" | reverse %}
 {% assign current_year = "" %}
 
 {% for post in pubs %}
