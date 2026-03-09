@@ -6,5 +6,5 @@ venue: "Pre-print"
 authors: "Daiqing Wu, Dongbao Yang, Can Ma, Zhou Yu"
 paperurl: "https://arxiv.org/abs/2512.15528"
 code: "https://github.com/wdqqdw/EmoCaliber"
-order: 9
+order: 202509
 ---
