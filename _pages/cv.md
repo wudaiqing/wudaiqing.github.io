@@ -9,54 +9,10 @@ redirect_from:
 
 ### 教育经历
 
-* 2021.09-2026.06 (预期)：中国科学院信息工程研究所，博士（导师：马灿正高级工程师，周宇教授）
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* 2021.09-2026.06 (预期)：中国科学院信息工程研究所，博士（导师：马灿教授，周宇教授）
+* 2017.09-2021.07：上海科技大学，本科
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+### 学术服务
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* 会议审稿：ICLR 26~, ICML 26~, CVPR 26~, ECCV 26~, AAAI 26~, ACMMM 25~, ICMR 26~
+* 期刊审稿：TAFFC, PR
