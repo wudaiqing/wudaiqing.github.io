@@ -1,17 +1,15 @@
 ---
 layout: archive
-title: "CV"
+title: "个人履历"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+### 教育经历
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* 2021.09-2026.06 (预期)：中国科学院信息工程研究所，博士（导师：马灿正高级工程师，周宇教授）
 * M.S. in Jekyll, GitHub University, 2014
 * B.S. in GitHub, GitHub University, 2012
 
