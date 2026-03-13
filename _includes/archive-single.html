@@ -38,15 +38,15 @@
       {% case venue %}
         {% when "nature","science" %}
           {% assign level = "a" %}
-        {% when "TPAMI","ICLR (Oral)" %}
+        {% when "tpami","iclr (oral)" %}
           {% assign level = "b" %}
-        {% when "CVPR","ICCV","ECCV","NeurIPS","ICLR","ICML","ACL" %}
+        {% when "cvpr","iccv","eccv","neurips","iclr","icml","acl" %}
           {% assign level = "c" %}
-        {% when "AAAI","IJCAI","ACMMM","ACMMM (Oral)","EMNLP","ACL (Findings)" %}
+        {% when "aaai","ijcai","acmmm","acmmm (oral)","emnlp","acl (findings)","pr" %}
           {% assign level = "d" %}
-        {% when "ICME","ICASSP" %}
+        {% when "icme","icassp" %}
           {% assign level = "e" %}
-        {% when "ICIP","ICDAR" %}
+        {% when "icip","icdar" %}
           {% assign level = "f" %}
         {% else %}
           {% assign level = "g" %}
