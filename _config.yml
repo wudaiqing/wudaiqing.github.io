@@ -23,7 +23,7 @@ repository               : "wudaiqing/wudaiqing.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/life_photo.jpg"
+  avatar           : "images/life_photo.jpg"
   name             : "Daiqing Wu"
   pronouns         : # example: "she/her"  
   bio              : "5th-year PhD Student @ IIE CAS"
